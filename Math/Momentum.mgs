@@ -1,0 +1,22 @@
+struct Momentum {
+    mass : f64;
+    velocity: f64;
+}
+
+trait Computable {
+    def compute : number;
+}
+
+impl Computable for Momentum {
+    def compute => mass * velocity
+}
+
+struct Momenta {
+    values: Vec[Momentum]
+}
+
+impl Computable for Momenta {
+    def compute => values
+        .map(_.compute)
+        .sum()
+}
