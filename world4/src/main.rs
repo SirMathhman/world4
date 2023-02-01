@@ -1,6 +1,7 @@
 fn main(){
-    let resources = 100;
-    while(resources < 1) {
-        println!(resources);
+    let mut resources = 100;
+    while resources > 0 {
+        println!("Resources {}", resources);
+        resources -= 1;
     }
 }
