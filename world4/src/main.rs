@@ -1,7 +1,11 @@
 fn main(){
-    let mut resources = 100;
-    while resources > 0 {
-        println!("Resources {}", resources);
-        resources -= 1;
+
+}
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn empty_test(){
+        
     }
 }
